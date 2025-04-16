@@ -41,11 +41,10 @@ app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 
 // Configure CORS for the REST API
 app.use(cors({
-  origin: [
+  origin: 
     'https://juice-social-yfc8ju2c-alis-projects-1ef90113.vercel.app',  // Add your specific Vercel URL
     'https://juice-social-app.vercel.app',
-    'http://localhost:5173'
-  ],
+    'http://localhost:5173',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true
